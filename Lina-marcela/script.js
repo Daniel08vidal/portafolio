@@ -26,7 +26,6 @@
 ((d)=> {
   "use stric"
 $navbar = d.querySelector(".menu").querySelectorAll("a");
-console.log($navbar)
 
 $navbar.forEach(element => {
   element.addEventListener("click", function(){
