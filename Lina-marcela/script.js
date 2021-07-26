@@ -21,7 +21,21 @@
      });
     })(document);
 
+//     MENU
+  
+((d)=> {
+  "use stric"
+$navbar = d.querySelector(".menu").querySelectorAll("a");
+console.log($navbar)
 
+$navbar.forEach(element => {
+  element.addEventListener("click", function(){
+    $navbar.forEach(nav=>nav.classList.remove("active"));
+
+    this.classList.add("active");
+  })
+});
+  })(document);
 
 
 
@@ -55,7 +69,7 @@ window.addEventListener('scroll',mostrarScroll);
     $form.addEventListener("submit", (e) => {
       e.preventDefault();
       $loader.classList.remove("none");
-      fetch("https://formsubmit.co/ajax/danielvidalmedina@gmail.com", {
+      fetch("https://formsubmit.co/ajax/linaarguello04@gmail.com", {
         method: "POST",
         body: new FormData(e.target),
       })
